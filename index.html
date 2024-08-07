@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Tartas Sandra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    p {
+      margin: 0px;
+    }
+
+    .space {
+      height: 1rem;
+    }
+
+    .justify {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .center {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .map {
+      min-height: 20rem;
+      border: 1px solid black;
+    }
+  </style>
+  <script>
+    function closeNav() {
+      var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
+      var collapseList = collapseElementList.map(function (collapseEl) {
+        return new bootstrap.Collapse(collapseEl)
+      })
+    }
+    function flip(element) {
+      let flipped = "flipped";
+      if (element.classList.contains(flipped)) {
+        element.classList.remove(flipped);
+      } else {
+        element.classList.add(flipped);
+      }
+    }
+
+
+  </script>
+</head>
+
+<body>
+  <!--Menu-->
+  <nav class="navbar sticky-top bg-body">
+    <div class="container">
+      <!--Boton hamburguesa-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Titulo-->
+      <div class="navbar-text display-4">Tartas Sandra</div>
+      <!--Contacto-->
+      <a class="btn btn-info d-none d-sm-block" href="index.html#contacto" role="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+          viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
+          </path>
+        </svg>
+        Contacto
+      </a>
+      <a class="btn btn-info d-block d-sm-none" role="button" href="index.html#contacto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+          viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
+          </path>
+        </svg>
+      </a>
+      <!--Menu hamburguesa-->
+      <div class="collapse navbar-collapse" id="navigation">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#home" onclick="closeNav()">Mis Tartas</a>
+          <a class="nav-link" href="gallery.html" onclick="closeNav()"><span>&#128248;</span> Galería</a>
+        </div>
+      </div>
+  </nav>
+  <!--Main-->
+  <main class="container">
+
+    <!--Banner-->
+    <div class="card" id="home">
+      <img class="card-img-top img-fluid" src="img/front.jpg" alt="Tartas Sandra">
+      <div class="card-body">
+        <h3 class="card-title text-center">Descubre mis tartas</h3>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="container-fluid">
+
+          <div class="row text-center">
+            <div class="col">
+              <img class="img-fluid w-50" src="img/Banner/calendar.png">
+              <div class="space"></div>
+              <h5>Más de 10 años realizando tartas para diferentes eventos.</h5>
+            </div>
+            <div class="col">
+              <img class="img-fluid w-50" src="img/Banner/verified.png">
+              <div class="space"></div>
+              <h5>Tanto si te encanta el dulce o si no eres tan goloso, tengo un pastel para ti.</h5>
+            </div>
+          </div>
+
+          <div class="space"></div>
+          <div class="space"></div>
+          <div class="space"></div>
+
+          <h4 class="text-center">Deléitate con nuestros sabores...</h4>
+          <div class="space"></div>
+          <div class="row text-center">
+            <div class="col">
+              <img class="img-fluid" src="img/Banner/ponque.png">
+              <h5>Ponqué</h5>
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="img/Banner/vainilla.png">
+              <h5>Vainilla</h5>
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="img/Banner/coco.png">
+              <h5>Coco</h5>
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="img/Banner/fresa.png">
+              <h5>Fresa</h5>
+            </div>
+          </div>
+
+          <div class="space"></div>
+          <div class="space"></div>
+          <div class="space"></div>
+
+          <h4 class="text-center">Y nuestros rellenos!</h4>
+          <div class="space"></div>
+          <div class="row text-center">
+            <div class="col">
+              <img class="img-fluid" src="img/Banner/dulce_leche.png">
+              <h5>Dulce de leche</h5>
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="img/Banner/chocolate.png">
+              <h5>Chocolate</h5>
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="img/Banner/nata.png">
+              <h5>Nata</h5>
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="img/Banner/fruta.png">
+              <h5>Fruta</h5>
+            </div>
+          </div>
+
+          <div class="space"></div>
+          <div class="space"></div>
+
+        </div>
+      </div>
+
+      <div class="space"></div>
+      <div class="space"></div>
+
+      <h4 class="text-center">Para cualquier evento que tengas...</h4>
+      <div class="space"></div>
+      <div class="container-fluid">
+        <div class="row row-cols-2 row-cols-md-4 g-3">
+          <!--Bautizos-->
+          <div class="col">
+            <div class="text-center" onclick="location.href='gallery.html#bautizos';">
+              <img src="img/Bautizo/web.png" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Bautizos</h5>
+              </div>
+            </div>
+          </div>
+
+          <!--Bodas-->
+          <div class="col">
+            <div class="text-center" onclick="location.href='gallery.html#bodas';">
+              <img src="img/Bodas/web.png" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h5 class="card-title">Bodas</h5>
+              </div>
+            </div>
+          </div>
+
+          <!--Comuniones-->
+          <div class="col">
+            <div class="text-center" onclick="location.href='gallery.html#comuniones';">
+              <img src="img/Comunion/web.png" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h5 class="card-title ">Comuniones</h5>
+              </div>
+            </div>
+          </div>
+
+          <!--Cumpleaños-->
+          <div class="col">
+            <div class="text-center" onclick="location.href='gallery.html#cumples';">
+              <img src="img/Cumples/web.png" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h5 class="card-title ">Cumpleaños</h5>
+              </div>
+            </div>
+          </div>
+
+          <!--Fiestas-->
+          <div class="col">
+            <div class="text-center" onclick="location.href='gallery.html#fiestas';">
+              <img src="img/Fiestas/web.png" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h5 class="card-title ">Fiestas</h5>
+              </div>
+            </div>
+          </div>
+
+          <!--Desayunos-->
+          <div class="col">
+            <div class="text-center" onclick="location.href='gallery.html#desayunos';">
+              <img src="img/Desayunos/web.png" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h5 class="card-title ">Desayunos</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space"></div>
+    <!--Contacto-->
+    <div class="card" id="contacto">
+      <div class="card-body row row-cols-1 row-cols-md-2 g-3">
+        <h5 class="col-12 col-sm-12 col-md-12 card-title text-center">Contacto</h5>
+        <iframe class="col map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-3.0012094974517827%2C43.28986186285043%2C-2.9922509193420415%2C43.29336039871159&amp;layer=transportmap&amp;marker=43.29161115593727%2C-2.9967302083969116">
+        </iframe>
+        <div class="text-center">
+          <div class="space"></div>
+          <p class="w-100">No dudes en contactarme por mis redes sociales:</p>
+          <a href="https://api.whatsapp.com/send/?phone=34685070346" target="_blank"><img src="img/Tarjeta/whatsapp.png"
+              class="icon"></a>
+          <a href="https://www.instagram.com/mis_tartas_sandra" target="_blank"><img src="img/Tarjeta/instagram.png"
+              class="icon"></a>
+          <div class="space"></div>
+          <p class="w-100">Puedes llamarme (10:00 a 20:00)</p>
+          <a href="tel:+34685070346" target="_blank"><span>&#128222;</span> +34 685 070 346</a>
+          <div class="space"></div>
+          <p>La dirección:</p>
+          <a href="https://maps.app.goo.gl/H26LkPRxQHPJdiyb6" target="_blank"><span>&#128205;</span> Grupo Primero de
+            mayo 26, Barakaldo</a>
+        </div>
+      </div>
+    </div>
+    <div class="space"></div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
