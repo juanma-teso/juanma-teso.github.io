@@ -22,6 +22,11 @@
       text-justify: inter-word;
     }
 
+    .text-icon {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
     .center {
       display: flex;
       text-align: center;
@@ -37,6 +42,12 @@
     .map {
       min-height: 20rem;
       border: 1px solid black;
+    }
+
+    @media screen and (min-width: 576px) {
+      .text-icon {
+        font-size: 1.25rem;
+      }
     }
   </style>
   <script>
@@ -102,22 +113,22 @@
     <!--Banner-->
     <div class="card" id="home">
       <img class="card-img-top img-fluid" src="img/front.jpg" alt="Tartas Sandra">
-      <div class="card-body">
+      <div class="card-body ">
         <h3 class="card-title text-center">Descubre mis tartas</h3>
         <div class="space"></div>
         <div class="space"></div>
-        <div class="container-fluid">
+        <div class="container-fluid text-center">
 
-          <div class="row text-center">
+          <div class="row">
             <div class="col">
               <img class="img-fluid w-50" src="img/Banner/calendar.png">
               <div class="space"></div>
-              <h5>Más de 10 años realizando tartas para diferentes eventos.</h5>
+              <h5>Más de 10 años de experiencia.</h5>
             </div>
             <div class="col">
               <img class="img-fluid w-50" src="img/Banner/verified.png">
               <div class="space"></div>
-              <h5>Tanto si te encanta el dulce o si no eres tan goloso, tengo un pastel para ti.</h5>
+              <h5>Tengo el pastel ideal para ti.</h5>
             </div>
           </div>
 
@@ -125,49 +136,54 @@
           <div class="space"></div>
           <div class="space"></div>
 
-          <h4 class="text-center">Deléitate con nuestros sabores...</h4>
-          <div class="space"></div>
-          <div class="row text-center">
+          <div class="row row-cols-2 g-3 d-none d-md-flex">
             <div class="col">
-              <img class="img-fluid" src="img/Banner/ponque.png">
-              <h5>Ponqué</h5>
+              <h4>Deléitate con nuestros sabores...</h4>
             </div>
             <div class="col">
-              <img class="img-fluid" src="img/Banner/vainilla.png">
-              <h5>Vainilla</h5>
-            </div>
-            <div class="col">
-              <img class="img-fluid" src="img/Banner/coco.png">
-              <h5>Coco</h5>
-            </div>
-            <div class="col">
-              <img class="img-fluid" src="img/Banner/fresa.png">
-              <h5>Fresa</h5>
+              <h4>Y nuestros rellenos!</h4>
             </div>
           </div>
+          <div class="row row-cols-2 g-3">
+            <div class="col-12 col-md-6">
+              <h4 class="d-md-none">Deléitate con nuestros sabores...</h4>
+              <div class="space"></div>
+              <div class="row">
+                <div class="col">
+                  <img class="img-fluid w-75" src="img/Banner/ponque.png">
+                  <p class="text-icon">Ponqué</p>
+                  <img class="img-fluid w-75" src="img/Banner/vainilla.png">
+                  <p class="text-icon">Vainilla</p>
+                </div>
+                <div class="col">
+                  <img class="img-fluid w-75" src="img/Banner/coco.png">
+                  <p class="text-icon">Coco</p>
+                  <img class="img-fluid w-75" src="img/Banner/fresa.png">
+                  <p class="text-icon">Fresa</p>
 
-          <div class="space"></div>
-          <div class="space"></div>
-          <div class="space"></div>
+                </div>
+              </div>
+            </div>
 
-          <h4 class="text-center">Y nuestros rellenos!</h4>
-          <div class="space"></div>
-          <div class="row text-center">
-            <div class="col">
-              <img class="img-fluid" src="img/Banner/dulce_leche.png">
-              <h5>Dulce de leche</h5>
-            </div>
-            <div class="col">
-              <img class="img-fluid" src="img/Banner/chocolate.png">
-              <h5>Chocolate</h5>
-            </div>
-            <div class="col">
-              <img class="img-fluid" src="img/Banner/nata.png">
-              <h5>Nata</h5>
-            </div>
-            <div class="col">
-              <img class="img-fluid" src="img/Banner/fruta.png">
-              <h5>Fruta</h5>
+            <div class="space col-12 d-md-none"></div>
+
+            <div class="col-12 col-md-6">
+              <h4 class="d-md-none">Y nuestros rellenos!</h4>
+              <div class="space"></div>
+              <div class="row">
+                <div class="col">
+                  <img class="img-fluid w-75" src="img/Banner/dulce_leche.png">
+                  <p class="text-icon">Dulce de leche</p>
+                  <img class="img-fluid w-75" src="img/Banner/chocolate.png">
+                  <p class="text-icon">Chocolate</p>
+                </div>
+                <div class="col">
+                  <img class="img-fluid w-75" src="img/Banner/nata.png">
+                  <p class="text-icon">Nata</p>
+                  <img class="img-fluid w-75" src="img/Banner/fruta.png">
+                  <p class="text-icon">Fruta</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -175,71 +191,59 @@
           <div class="space"></div>
 
         </div>
-      </div>
 
-      <div class="space"></div>
-      <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
 
-      <h4 class="text-center">Para cualquier evento que tengas...</h4>
-      <div class="space"></div>
-      <div class="container-fluid">
-        <div class="row row-cols-2 row-cols-md-4 g-3">
-          <!--Bautizos-->
-          <div class="col">
-            <div class="text-center" onclick="location.href='gallery.html#bautizos';">
-              <img src="img/Bautizo/web.png" class="card-img-top img-fluid">
-              <div class="card-body">
-                <h5 class="card-title">Bautizos</h5>
+        <h4 class="text-center">Para cualquier evento que tengas...</h4>
+        <div class="space"></div>
+        <div class="container-fluid">
+          <div class="row row-cols-2 row-cols-md-6 g-3">
+            <!--Bautizos-->
+            <div class="col">
+              <div class="text-center" onclick="location.href='gallery.html#bautizos';">
+                <img src="img/Bautizo/web.png" class="img-fluid">
+                <p class="text-icon">Bautizos</p>
               </div>
             </div>
-          </div>
 
-          <!--Bodas-->
-          <div class="col">
-            <div class="text-center" onclick="location.href='gallery.html#bodas';">
-              <img src="img/Bodas/web.png" class="card-img-top img-fluid">
-              <div class="card-body">
-                <h5 class="card-title">Bodas</h5>
+            <!--Bodas-->
+            <div class="col">
+              <div class="text-center" onclick="location.href='gallery.html#bodas';">
+                <img src="img/Bodas/web.png" class="img-fluid">
+                <p class="text-icon">Bodas</p>
               </div>
             </div>
-          </div>
 
-          <!--Comuniones-->
-          <div class="col">
-            <div class="text-center" onclick="location.href='gallery.html#comuniones';">
-              <img src="img/Comunion/web.png" class="card-img-top img-fluid">
-              <div class="card-body">
-                <h5 class="card-title ">Comuniones</h5>
+            <!--Comuniones-->
+            <div class="col">
+              <div class="text-center" onclick="location.href='gallery.html#comuniones';">
+                <img src="img/Comunion/web.png" class="img-fluid">
+                <p class="text-icon">Comuniones</p>
               </div>
             </div>
-          </div>
 
-          <!--Cumpleaños-->
-          <div class="col">
-            <div class="text-center" onclick="location.href='gallery.html#cumples';">
-              <img src="img/Cumples/web.png" class="card-img-top img-fluid">
-              <div class="card-body">
-                <h5 class="card-title ">Cumpleaños</h5>
+            <!--Cumpleaños-->
+            <div class="col">
+              <div class="text-center" onclick="location.href='gallery.html#cumples';">
+                <img src="img/Cumples/web.png" class="img-fluid">
+                <p class="text-icon">Cumpleaños</p>
               </div>
             </div>
-          </div>
 
-          <!--Fiestas-->
-          <div class="col">
-            <div class="text-center" onclick="location.href='gallery.html#fiestas';">
-              <img src="img/Fiestas/web.png" class="card-img-top img-fluid">
-              <div class="card-body">
-                <h5 class="card-title ">Fiestas</h5>
+            <!--Fiestas-->
+            <div class="col">
+              <div class="text-center" onclick="location.href='gallery.html#fiestas';">
+                <img src="img/Fiestas/web.png" class="img-fluid">
+                <p class="text-icon">Fiestas</p>
               </div>
             </div>
-          </div>
 
-          <!--Desayunos-->
-          <div class="col">
-            <div class="text-center" onclick="location.href='gallery.html#desayunos';">
-              <img src="img/Desayunos/web.png" class="card-img-top img-fluid">
-              <div class="card-body">
-                <h5 class="card-title ">Desayunos</h5>
+            <!--Desayunos-->
+            <div class="col">
+              <div class="text-center" onclick="location.href='gallery.html#desayunos';">
+                <img src="img/Desayunos/web.png" class="img-fluid">
+                <p class="text-icon">Desayunos</p>
               </div>
             </div>
           </div>
