@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
 
   <!-- HTML Meta Tags -->
   <title>Mis Tartas Sandra</title>
@@ -96,6 +97,8 @@
 </head>
 
 <body>
+  <!--Top-->
+  <div id="top"></div>
   <!--Menu-->
   <nav class="navbar sticky-top bg-body">
     <div class="container">
@@ -127,7 +130,7 @@
       <!--Menu hamburguesa-->
       <div class="collapse navbar-collapse" id="navigation">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#home" onclick="closeNav()">Mis Tartas</a>
+          <a class="nav-link active" aria-current="page" href="#top" onclick="closeNav()">Mis Tartas</a>
           <a class="nav-link" href="gallery.html" onclick="closeNav()"><span>&#128248;</span> Galería</a>
         </div>
       </div>
@@ -138,28 +141,37 @@
     <!--Banner-->
     <div class="card" id="home">
       <img class="card-img-top img-fluid" src="img/front.jpg" alt="Tartas Sandra">
-      <div class="card-body ">
-        <h3 class="card-title text-center">Descubre mis tartas</h3>
-        <div class="space"></div>
-        <div class="space"></div>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="card">
+      <div class="card-body">
         <div class="container-fluid text-center">
+          <h4 class="card-title">Descubre mis tartas</h4>
+          <div class="space"></div>
 
           <div class="row">
             <div class="col">
-              <img class="img-fluid w-50" src="img/Banner/calendar.png">
+              <img class="img-fluid w-50" src="img/Banner/calendar.png" alt="10 años de experiencia">
               <div class="space"></div>
               <h5>Más de 10 años de experiencia.</h5>
             </div>
             <div class="col">
-              <img class="img-fluid w-50" src="img/Banner/verified.png">
+              <img class="img-fluid w-50" src="img/Banner/verified.png" alt="Exito asegurado">
               <div class="space"></div>
-              <h5>Tengo el pastel ideal para ti.</h5>
+              <h5>Tengo la tarta ideal para ti.</h5>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="space"></div>
-          <div class="space"></div>
-          <div class="space"></div>
+    <div class="space"></div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="container-fluid text-center">
 
           <div class="row row-cols-2 g-3 d-none d-md-flex">
             <div class="col">
@@ -169,21 +181,22 @@
               <h4>Y nuestros rellenos!</h4>
             </div>
           </div>
+
           <div class="row row-cols-2 g-3">
             <div class="col-12 col-md-6">
               <h4 class="d-md-none">Deléitate con nuestros sabores...</h4>
               <div class="space"></div>
               <div class="row">
                 <div class="col">
-                  <img class="img-fluid w-75" src="img/Banner/ponque.png">
+                  <img class="img-fluid w-75" src="img/Banner/ponque.png" alt="Sabor ponqué">
                   <p class="text-icon">Ponqué</p>
-                  <img class="img-fluid w-75" src="img/Banner/vainilla.png">
+                  <img class="img-fluid w-75" src="img/Banner/vainilla.png" alt="Sabor vainilla">
                   <p class="text-icon">Vainilla</p>
                 </div>
                 <div class="col">
-                  <img class="img-fluid w-75" src="img/Banner/coco.png">
+                  <img class="img-fluid w-75" src="img/Banner/coco.png" alt="Sabor coco">
                   <p class="text-icon">Coco</p>
-                  <img class="img-fluid w-75" src="img/Banner/fresa.png">
+                  <img class="img-fluid w-75" src="img/Banner/fresa.png" alt="Sabor fresa">
                   <p class="text-icon">Fresa</p>
 
                 </div>
@@ -197,78 +210,81 @@
               <div class="space"></div>
               <div class="row">
                 <div class="col">
-                  <img class="img-fluid w-75" src="img/Banner/dulce_leche.png">
+                  <img class="img-fluid w-75" src="img/Banner/dulce_leche.png" alt="Relleno de dulce de leche">
                   <p class="text-icon">Dulce de leche</p>
-                  <img class="img-fluid w-75" src="img/Banner/chocolate.png">
+                  <img class="img-fluid w-75" src="img/Banner/chocolate.png" alt="Relleno de chocolate">
                   <p class="text-icon">Chocolate</p>
                 </div>
                 <div class="col">
-                  <img class="img-fluid w-75" src="img/Banner/nata.png">
+                  <img class="img-fluid w-75" src="img/Banner/nata.png" alt="Relleno de nata">
                   <p class="text-icon">Nata</p>
-                  <img class="img-fluid w-75" src="img/Banner/fruta.png">
+                  <img class="img-fluid w-75" src="img/Banner/fruta.png" alt="Relleno de fruta">
                   <p class="text-icon">Fruta</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="space"></div>
-          <div class="space"></div>
-
         </div>
+      </div>
+    </div>
 
-        <div class="space"></div>
-        <div class="space"></div>
+    <div class="space"></div>
 
-        <h4 class="text-center">Para cualquier evento que tengas...</h4>
-        <div class="space"></div>
-        <div class="container-fluid">
-          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
-            <!--Bautizos-->
-            <div class="col">
-              <div class="text-center" onclick="location.href='gallery.html#bautizos';">
-                <img src="img/Bautizo/web.png" class="img-fluid">
-                <p class="text-icon">Bautizos</p>
+    <div class="card">
+      <div class="card-body">
+        <div class="container-fluid text-center">
+
+          <h4 class="text-center">Para cualquier evento que tengas...</h4>
+          <div class="space"></div>
+          <div class="container-fluid">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+              <!--Bautizos-->
+              <div class="col">
+                <div class="text-center" onclick="location.href='gallery.html#bautizos';">
+                  <img src="img/Bautizo/web.png" class="img-fluid" alt="Pila bautismal icono">
+                  <p class="text-icon">Bautizos</p>
+                </div>
               </div>
-            </div>
 
-            <!--Bodas-->
-            <div class="col">
-              <div class="text-center" onclick="location.href='gallery.html#bodas';">
-                <img src="img/Bodas/web.png" class="img-fluid">
-                <p class="text-icon">Bodas</p>
+              <!--Bodas-->
+              <div class="col">
+                <div class="text-center" onclick="location.href='gallery.html#bodas';">
+                  <img src="img/Bodas/web.png" class="img-fluid" alt="Boda icono">
+                  <p class="text-icon">Bodas</p>
+                </div>
               </div>
-            </div>
 
-            <!--Comuniones-->
-            <div class="col">
-              <div class="text-center" onclick="location.href='gallery.html#comuniones';">
-                <img src="img/Comunion/web.png" class="img-fluid">
-                <p class="text-icon">Comuniones</p>
+              <!--Comuniones-->
+              <div class="col">
+                <div class="text-center" onclick="location.href='gallery.html#comuniones';">
+                  <img src="img/Comunion/web.png" class="img-fluid" alt="Comunion icono">
+                  <p class="text-icon">Comuniones</p>
+                </div>
               </div>
-            </div>
 
-            <!--Cumpleaños-->
-            <div class="col">
-              <div class="text-center" onclick="location.href='gallery.html#cumples';">
-                <img src="img/Cumples/web.png" class="img-fluid">
-                <p class="text-icon">Cumpleaños</p>
+              <!--Cumpleaños-->
+              <div class="col">
+                <div class="text-center" onclick="location.href='gallery.html#cumples';">
+                  <img src="img/Cumples/web.png" class="img-fluid" alt="Cumpleaños icono">
+                  <p class="text-icon">Cumpleaños</p>
+                </div>
               </div>
-            </div>
 
-            <!--Fiestas-->
-            <div class="col">
-              <div class="text-center" onclick="location.href='gallery.html#fiestas';">
-                <img src="img/Fiestas/web.png" class="img-fluid">
-                <p class="text-icon">Fiestas</p>
+              <!--Fiestas-->
+              <div class="col">
+                <div class="text-center" onclick="location.href='gallery.html#fiestas';">
+                  <img src="img/Fiestas/web.png" class="img-fluid" alt="Fiestas icono">
+                  <p class="text-icon">Fiestas</p>
+                </div>
               </div>
-            </div>
 
-            <!--Desayunos-->
-            <div class="col">
-              <div class="text-center" onclick="location.href='gallery.html#desayunos';">
-                <img src="img/Desayunos/web.png" class="img-fluid">
-                <p class="text-icon">Desayunos</p>
+              <!--Desayunos-->
+              <div class="col">
+                <div class="text-center" onclick="location.href='gallery.html#desayunos';">
+                  <img src="img/Desayunos/web.png" class="img-fluid" alt="Desayunos icono">
+                  <p class="text-icon">Desayunos</p>
+                </div>
               </div>
             </div>
           </div>
@@ -287,9 +303,9 @@
           <div class="space"></div>
           <p class="w-100">No dudes en contactarme por mis redes sociales:</p>
           <a href="https://api.whatsapp.com/send/?phone=34685070346" target="_blank"><img src="img/Tarjeta/whatsapp.png"
-              class="icon"></a>
+              alt="whatsapp icono" class="icon"></a>
           <a href="https://www.instagram.com/mis_tartas_sandra" target="_blank"><img src="img/Tarjeta/instagram.png"
-              class="icon"></a>
+              alt="instagram icono" class="icon"></a>
           <div class="space"></div>
           <p class="w-100">Puedes llamarme (10:00 a 20:00)</p>
           <a href="tel:+34685070346" target="_blank"><span>&#128222;</span> +34 685 070 346</a>
