@@ -5,16 +5,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-
+	
 	<!-- HTML Meta Tags -->
-	<title>Galería</title>
-	<meta name="description" content="Galería de Mis Tartas Sandra.">
-
+	<title>Desayunos</title>
+	<meta name="description" content="Desayunos sorpresas en Bizkaia">
+  
 	<!-- Facebook Meta Tags -->
 	<meta property="og:url" content="https://www.tartassandra.es">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Galería">
-	<meta property="og:description" content="Galería de fotos">
+	<meta property="og:title" content="Mis Tartas Sandra">
+	<meta property="og:description" content="Desayunos sorpresas en Bizkaia">
 	<meta property="og:site_name" content="Mis Tartas Sandra" />
 	<meta property="og:image" content="https://tartassandra.es/img/og_image.jpg">
 	<meta property="og:image:type" content="image/jpeg" />
@@ -24,7 +24,7 @@
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="400" />
 	<meta property="og:image:height" content="400" />
-
+  
 	<!-- Twitter Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta property="twitter:domain" content="tartassandra.es">
@@ -32,16 +32,10 @@
 	<meta name="twitter:title" content="Mis Tartas Sandra">
 	<meta name="twitter:description" content="Tartas artesanales personalizadas en Bizkaia">
 	<meta name="twitter:image" content="https://tartassandra.es/img/front.jpg">
-
+	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css" />
-	<style>
-		body {
-			overflow-y: scroll; /* Show vertical scrollbar */
-		}
-	</style>
-
 	<script>
 		function closeNav() {
 			var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
@@ -55,6 +49,9 @@
 </head>
 
 <body>
+
+	<!--Top-->
+	<div id="top"></div>
 	<!--Menu-->
 	<nav class="navbar sticky-top bg-body">
 		<div class="container">
@@ -64,7 +61,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<!--Titulo-->
-			<h1 class="display-3 text-center">Tartas Sandra</h1>
+			<div class="navbar-text display-4">Tartas Sandra</div>
 			<!--Contacto-->
 			<a class="btn btn-info d-none d-sm-block" href="index.html#contacto" role="button">
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -95,32 +92,11 @@
 	</nav>
 	<!--Main-->
 	<main class="container">
-		<div class="card" id="contacto">
-			<div class="card-body row row-cols-1 row-cols-md-2 g-3">
-				<div class="container-fluid">
-					<div class="space"></div>
-					<button class="btn btn-light w-100" type="button" data-bs-toggle="collapse"
-						data-bs-target="#categories" aria-expanded="false" aria-controls="categories">
-						Categorías
-					</button>
-					<div id="categories" class="collapse">
-						<div class="list-group w-100">
-							<a class="btn" href="gallery_tendencia.html"><span>&#128293;</span> Tendencia</a>
-							<a class="btn" href="gallery_bautizos.html"><span>&#128118;</span> Bautizos</a>
-							<a class="btn" href="gallery_bodas.html"><span>&#128112;</span> Bodas</a>
-							<a class="btn" href="gallery_comuniones.html"><span>&#128124;</span> Comuniones</a>
-							<a class="btn" href="gallery_cumples.html"><span>&#127874;</span> Cumpleaños</a>
-							<a class="btn" href="gallery_fiestas.html"><span>&#127881;</span> Fiestas</a>
-							<a class="btn" href="gallery_desayunos.html"><span>&#127873;</span> Desayunos</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+
 		<!--Carousel-->
 		<div class="card" id="carousel">
 
-			<div class="space"></div>
+			<h2 id="Title" class="display-4 text-center">Bautizos</h2>
 			<div id="carousel" class="carousel slide" data-bs-ride="carousel">
 				<!-- Indicators -->
 				<ol id="indicators" class="carousel-indicators">
@@ -128,28 +104,20 @@
 					<li data-bs-target="#carousel" data-bs-slide-to="1"></li>
 					<li data-bs-target="#carousel" data-bs-slide-to="2"></li>
 					<li data-bs-target="#carousel" data-bs-slide-to="3"></li>
-					<li data-bs-target="#carousel" data-bs-slide-to="4"></li>
-					<li data-bs-target="#carousel" data-bs-slide-to="5"></li>
 				</ol>
 				<!-- Slides -->
 				<div id="slides" class="carousel-inner">
-					<div class="carousel-item active" onclick="location.href='gallery_bautizos.html';">
-						<img src="img/Bautizo/img_1.jpeg" class="d-block" alt="Foto_bautizo">
+					<div class="carousel-item active">
+						<img src="img/Bautizo/img_1.jpeg" class="d-block" alt="Foto_desayuno_1">
 					</div>
-					<div class="carousel-item" onclick="location.href='gallery_bodas.html';">
-						<img src="img/Bodas/img_1.jpeg" class="d-block" alt="Foto_boda">
+					<div class="carousel-item">
+						<img src="img/Bautizo/img_2.jpeg" class="d-block" alt="Foto_desayuno_2">
 					</div>
-					<div class="carousel-item" onclick="location.href='gallery_comuniones.html';">
-						<img src="img/Comunion/img_1.jpeg" class="d-block" alt="Foto_comunion">
+					<div class="carousel-item">
+						<img src="img/Bautizo/img_3.jpeg" class="d-block" alt="Foto_desayuno_3">
 					</div>
-					<div class="carousel-item" onclick="location.href='gallery_cumples.html';">
-						<img src="img/Cumples/img_A_1.jpeg" class="d-block" alt="Foto_cumple_A">
-					</div>
-					<div class="carousel-item" onclick="location.href='gallery_cumples.html';">
-						<img src="img/Cumples/img_B_1.jpeg" class="d-block" alt="Foto_cumple_B">
-					</div>
-					<div class="carousel-item" onclick="location.href='gallery_cumples.html';">
-						<img src="img/Cumples/img_C_1.jpeg" class="d-block" alt="Foto_cumple_c">
+					<div class="carousel-item">
+						<img src="img/Bautizo/img_4.jpeg" class="d-block" alt="Foto_desayuno_4">
 					</div>
 				</div>
 

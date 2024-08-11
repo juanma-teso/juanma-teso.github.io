@@ -8,13 +8,14 @@
 
   <!-- HTML Meta Tags -->
   <title>Mis Tartas Sandra</title>
-  <meta name="description" content="Tartas artesanales personalizadas en Bizkaia.">
+  <meta name="description" content="Tartas artesanales personalizadas en Bizkaia">
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://www.tartassandra.es">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Mis Tartas Sandra">
-  <meta property="og:description" content="Tartas artesanales personalizadas en Bizkaia.">
+  <meta property="og:description" content="Tartas artesanales personalizadas en Bizkaia">
+  <meta property="og:site_name" content="Mis Tartas Sandra" />
   <meta property="og:image" content="https://tartassandra.es/img/og_image.jpg">
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1280" />
@@ -29,53 +30,13 @@
   <meta property="twitter:domain" content="tartassandra.es">
   <meta property="twitter:url" content="https://www.tartassandra.es">
   <meta name="twitter:title" content="Mis Tartas Sandra">
-  <meta name="twitter:description" content="Tartas artesanales personalizadas en Bizkaia.">
+  <meta name="twitter:description" content="Tartas artesanales personalizadas en Bizkaia">
   <meta name="twitter:image" content="https://tartassandra.es/img/front.jpg">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-    p {
-      margin: 0px;
-    }
+  <link rel="stylesheet" href="style.css" />
 
-    .space {
-      height: 1rem;
-    }
-
-    .justify {
-      text-align: justify;
-      text-justify: inter-word;
-    }
-
-    .text-icon {
-      font-weight: 500;
-      font-size: 1rem;
-    }
-
-    .center {
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .icon {
-      width: 2.5rem;
-      height: 2.5rem;
-    }
-
-    .map {
-      min-height: 20rem;
-      border: 1px solid black;
-    }
-
-    @media screen and (min-width: 576px) {
-      .text-icon {
-        font-size: 1.25rem;
-      }
-    }
-  </style>
   <script>
     function closeNav() {
       var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
@@ -131,9 +92,11 @@
       <div class="collapse navbar-collapse" id="navigation">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#top" onclick="closeNav()">Mis Tartas</a>
+          <a class="nav-link" href="pricing.html" onclick="closeNav()"><span>&#128176;</span> Precios</a>
           <a class="nav-link" href="gallery.html" onclick="closeNav()"><span>&#128248;</span> Galería</a>
         </div>
       </div>
+    </div>
   </nav>
   <!--Main-->
   <main class="container">
@@ -153,12 +116,12 @@
 
           <div class="row">
             <div class="col">
-              <img class="img-fluid w-50" src="img/Banner/calendar.png" alt="10 años de experiencia">
+              <img class="img-fluid w-50 icon" src="img/Banner/calendar.png" alt="10 años de experiencia">
               <div class="space"></div>
               <h5>Más de 10 años de experiencia.</h5>
             </div>
             <div class="col">
-              <img class="img-fluid w-50" src="img/Banner/verified.png" alt="Exito asegurado">
+              <img class="img-fluid w-50 icon" src="img/Banner/verified.png" alt="Exito asegurado">
               <div class="space"></div>
               <h5>Tengo la tarta ideal para ti.</h5>
             </div>
@@ -188,15 +151,15 @@
               <div class="space"></div>
               <div class="row">
                 <div class="col">
-                  <img class="img-fluid w-75" src="img/Banner/ponque.png" alt="Sabor ponqué">
+                  <img class="img-fluid w-75 icon" src="img/Banner/ponque.png" alt="Sabor ponqué">
                   <p class="text-icon">Ponqué</p>
-                  <img class="img-fluid w-75" src="img/Banner/vainilla.png" alt="Sabor vainilla">
+                  <img class="img-fluid w-75 icon" src="img/Banner/vainilla.png" alt="Sabor vainilla">
                   <p class="text-icon">Vainilla</p>
                 </div>
                 <div class="col">
-                  <img class="img-fluid w-75" src="img/Banner/coco.png" alt="Sabor coco">
+                  <img class="img-fluid w-75 icon" src="img/Banner/coco.png" alt="Sabor coco">
                   <p class="text-icon">Coco</p>
-                  <img class="img-fluid w-75" src="img/Banner/fresa.png" alt="Sabor fresa">
+                  <img class="img-fluid w-75 icon" src="img/Banner/fresa.png" alt="Sabor fresa">
                   <p class="text-icon">Fresa</p>
 
                 </div>
@@ -210,15 +173,15 @@
               <div class="space"></div>
               <div class="row">
                 <div class="col">
-                  <img class="img-fluid w-75" src="img/Banner/dulce_leche.png" alt="Relleno de dulce de leche">
+                  <img class="img-fluid w-75 icon" src="img/Banner/dulce_leche.png" alt="Relleno de dulce de leche">
                   <p class="text-icon">Dulce de leche</p>
-                  <img class="img-fluid w-75" src="img/Banner/chocolate.png" alt="Relleno de chocolate">
+                  <img class="img-fluid w-75 icon" src="img/Banner/chocolate.png" alt="Relleno de chocolate">
                   <p class="text-icon">Chocolate</p>
                 </div>
                 <div class="col">
-                  <img class="img-fluid w-75" src="img/Banner/nata.png" alt="Relleno de nata">
+                  <img class="img-fluid w-75 icon" src="img/Banner/nata.png" alt="Relleno de nata">
                   <p class="text-icon">Nata</p>
-                  <img class="img-fluid w-75" src="img/Banner/fruta.png" alt="Relleno de fruta">
+                  <img class="img-fluid w-75 icon" src="img/Banner/fruta.png" alt="Relleno de fruta">
                   <p class="text-icon">Fruta</p>
                 </div>
               </div>
@@ -237,57 +200,55 @@
 
           <h4 class="text-center">Para cualquier evento que tengas...</h4>
           <div class="space"></div>
-          <div class="container-fluid">
             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
               <!--Bautizos-->
               <div class="col">
-                <div class="text-center" onclick="location.href='gallery.html#bautizos';">
-                  <img src="img/Bautizo/web.png" class="img-fluid" alt="Pila bautismal icono">
+                <div class="text-center" onclick="location.href='gallery_bautizos.html';">
+                  <img src="img/Bautizo/web.png" class="img-fluid icon" alt="Pila bautismal icono">
                   <p class="text-icon">Bautizos</p>
                 </div>
               </div>
 
               <!--Bodas-->
               <div class="col">
-                <div class="text-center" onclick="location.href='gallery.html#bodas';">
-                  <img src="img/Bodas/web.png" class="img-fluid" alt="Boda icono">
+                <div class="text-center" onclick="location.href='gallery_bodas.html';">
+                  <img src="img/Bodas/web.png" class="img-fluid icon" alt="Boda icono">
                   <p class="text-icon">Bodas</p>
                 </div>
               </div>
 
               <!--Comuniones-->
               <div class="col">
-                <div class="text-center" onclick="location.href='gallery.html#comuniones';">
-                  <img src="img/Comunion/web.png" class="img-fluid" alt="Comunion icono">
+                <div class="text-center" onclick="location.href='gallery_comuniones.html';">
+                  <img src="img/Comunion/web.png" class="img-fluid icon" alt="Comunion icono">
                   <p class="text-icon">Comuniones</p>
                 </div>
               </div>
 
               <!--Cumpleaños-->
               <div class="col">
-                <div class="text-center" onclick="location.href='gallery.html#cumples';">
-                  <img src="img/Cumples/web.png" class="img-fluid" alt="Cumpleaños icono">
+                <div class="text-center" onclick="location.href='gallery_cumples.html';">
+                  <img src="img/Cumples/web.png" class="img-fluid icon" alt="Cumpleaños icono">
                   <p class="text-icon">Cumpleaños</p>
                 </div>
               </div>
 
               <!--Fiestas-->
               <div class="col">
-                <div class="text-center" onclick="location.href='gallery.html#fiestas';">
-                  <img src="img/Fiestas/web.png" class="img-fluid" alt="Fiestas icono">
+                <div class="text-center" onclick="location.href='gallery_fiestas.html';">
+                  <img src="img/Fiestas/web.png" class="img-fluid icon" alt="Fiestas icono">
                   <p class="text-icon">Fiestas</p>
                 </div>
               </div>
 
               <!--Desayunos-->
               <div class="col">
-                <div class="text-center" onclick="location.href='gallery.html#desayunos';">
-                  <img src="img/Desayunos/web.png" class="img-fluid" alt="Desayunos icono">
+                <div class="text-center" onclick="location.href='gallery_desayunos.html';">
+                  <img src="img/Desayunos/web.png" class="img-fluid icon" alt="Desayunos icono">
                   <p class="text-icon">Desayunos</p>
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
@@ -303,9 +264,9 @@
           <div class="space"></div>
           <p class="w-100">No dudes en contactarme por mis redes sociales:</p>
           <a href="https://api.whatsapp.com/send/?phone=34685070346" target="_blank"><img src="img/Tarjeta/whatsapp.png"
-              alt="whatsapp icono" class="icon"></a>
+              alt="whatsapp icono" class="rrss-icon"></a>
           <a href="https://www.instagram.com/mis_tartas_sandra" target="_blank"><img src="img/Tarjeta/instagram.png"
-              alt="instagram icono" class="icon"></a>
+              alt="instagram icono" class="rrss-icon"></a>
           <div class="space"></div>
           <p class="w-100">Puedes llamarme (10:00 a 20:00)</p>
           <a href="tel:+34685070346" target="_blank"><span>&#128222;</span> +34 685 070 346</a>

@@ -1,0 +1,62 @@
+p {
+	margin: 0px;
+}
+
+.space {
+	height: 1rem;
+}
+
+.justify {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.text-icon {
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+.center {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.rrss-icon {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.icon {
+	width: 100%;
+	height: auto;
+	min-width: 100px;
+	min-height: 100px;
+	max-width: 180px;
+	max-height: 180px;
+}
+
+.map {
+	min-height: 20rem;
+	border: 1px solid black;
+}
+
+
+.carousel-item img {
+	max-height: 60vh;
+	min-width: auto;
+	margin: auto
+}
+
+li::marker {
+	font-size: 0px;
+}
+
+
+
+@media screen and (min-width: 576px) {
+	.text-icon {
+		font-size: 1.25rem;
+	}
+}
